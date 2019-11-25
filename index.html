@@ -1,0 +1,584 @@
+<script>
+ window.onload = function(){
+ var canvas = document.getElementById("paper");
+  c = canvas.getContext("2d");
+
+ c.fillStyle ="grey";
+ c.fillRect(0,0,canvas.width, canvas.height);
+
+
+ //atas kesamping
+
+ c.fillStyle = "violet";
+ c.fillRect(0,0,120,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,0,120,120);
+
+ c.fillStyle = "white";
+ c.fillRect(120,0,90,90);
+
+ c.fillStyle = "red";
+ c.fillRect(120,90,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(120,0,90,120);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(210,0,90,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(210,0,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(300,0,90,90);
+
+ c.fillStyle = "red";
+ c.fillRect(300,90,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(300,0,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(390,0,90,90);
+
+ c.fillStyle = "red";
+ c.fillRect(390,90,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(390,0,90,120);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(480,0,90,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(480,0,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(570,0,90,90);
+
+ c.fillStyle = "yellow";
+ c.fillRect(570,90,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(570,0,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(660,0,90,90);
+
+ c.fillStyle = "yellow";
+ c.fillRect(660,90,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(660,0,90,120);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(750,0,90,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(750,0,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(840,0,90,90);
+
+ c.fillStyle = "yellow";
+ c.fillRect(840,90,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(840,0,90,120);
+
+ c.fillStyle = "violet";
+ c.fillRect(930,0,120,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,0,120,120);
+
+
+ //kiri kebawah
+ c.fillStyle = "white";
+ c.fillRect(0,120,90,90);
+
+ c.fillStyle = "orange";
+ c.fillRect(90,120,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,120,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(0,210,90,90);
+
+ c.fillStyle = "orange";
+ c.fillRect(90,210,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,210,120,90);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(0,300,120,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,300,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(0,390,90,90);
+
+ c.fillStyle = "orange";
+ c.fillRect(90,390,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,390,120,90);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(0,480,120,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,480,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(0,570,90,90);
+
+ c.fillStyle = "pink";
+ c.fillRect(90,570,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,570,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(0,660,90,90);
+
+ c.fillStyle = "pink";
+ c.fillRect(90,660,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,660,120,90);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(0,750,120,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,750,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(0,840,90,90);
+
+ c.fillStyle = "pink";
+ c.fillRect(90,840,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,840,120,90);
+
+
+ //kanan kebawah
+ c.fillStyle = "white";
+ c.fillRect(960,120,90,90);
+
+ c.fillStyle = "green";
+ c.fillRect(930,120,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,120,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(960,210,90,90);
+
+ c.fillStyle = "green";
+ c.fillRect(930,210,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,210,120,90);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(930,300,120,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,300,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(960,390,90,90);
+
+ c.fillStyle = "green";
+ c.fillRect(930,390,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,390,120,90);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(930,480,120,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,480,120,90);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(930,570,120,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,570,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(960,660,90,90);
+
+ c.fillStyle = "darkblue";
+ c.fillRect(930,660,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,660,120,90);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(930,750,120,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,750,120,90);
+
+ c.fillStyle = "white";
+ c.fillRect(960,840,90,90);
+
+ c.fillStyle = "darkblue";
+ c.fillRect(930,840,30,90);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,840,120,90);
+
+
+
+ //bawah kesamping
+ c.fillStyle = "violet";
+ c.fillRect(0,930,120,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(0,930,120,120);
+
+ c.fillStyle = "white";
+ c.fillRect(120,960,90,120);
+
+ c.fillStyle = "lightblue";
+ c.fillRect(120,930,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(120,930,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(210,960,90,120);
+
+ c.fillStyle = "lightblue";
+ c.fillRect(210,930,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(210,930,90,120);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(300,930,90,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(300,930,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(390,960,90,120);
+
+ c.fillStyle = "lightblue";
+ c.fillRect(390,930,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(390,930,90,120);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(480,930,90,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(480,930,90,120);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(570,930,90,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(570,930,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(660,960,90,120);
+
+ c.fillStyle = "darkviolet";
+ c.fillRect(660,930,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(660,930,90,120);
+
+ c.fillStyle = "lightgreen";
+ c.fillRect(750,930,90,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(750,930,90,120);
+
+ c.fillStyle = "white";
+ c.fillRect(840,960,90,120);
+
+ c.fillStyle = "darkviolet";
+ c.fillRect(840,930,90,30);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(840,930,90,120);
+
+ c.fillStyle = "violet";
+ c.fillRect(930,930,120,120);
+
+ c.strokeStyle = "black";
+ c.lineWidth = 5;
+ c.strokeRect(930,930,120,120);
+
+
+ c.fillStyle = "black";
+ c.fillRect(280,470,505,100);
+
+ c.fillStyle = "white";
+ c.fillRect(265,470,15,100);
+ c.fillStyle = "white";
+ c.fillRect(265,455,520,15);
+ c.fillStyle = "white";
+ c.fillRect(265,570,520,15);
+ c.fillStyle = "white";
+ c.fillRect(785,455,15,130);
+
+ c.fillStyle = "brown";
+ c.fillRect(160,155,300,140);
+ c.fillStyle = "brown";
+ c.fillRect(590,750,300,140);
+
+ c.fillStyle = "black";
+ c.font = "40px Arial";
+ c.fillText("CHEST",240,240);
+ c.fillStyle = "black";
+ c.font = "40px Arial";
+ c.fillText("CHANCE",655,835);
+
+ c.fillStyle = "yellow";
+ c.font = "80px Comic Sans MS";
+ c.fillText("MONOPOLY",300,550);
+
+ c.fillStyle = "red";
+ c.font = "18px Comic Sans MS";
+ c.fillText("FREE",35,65);
+
+ c.fillStyle = "red";
+ c.font = "18px Comic Sans MS";
+ c.fillText("JAIL",970,65);
+
+ c.fillStyle = "red";
+ c.font = "18px Comic Sans MS";
+ c.fillText("<-- START",945,990);
+
+ c.fillStyle = "red";
+ c.font = "18px Comic Sans MS";
+ c.fillText("JAIL",37,990);
+
+ //atas kesamping
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("SYDNEY",128,65);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("CHANCE",216,110);
+
+ c.fillStyle = "black";
+ c.font = "16px Verdana";
+ c.fillText("NEWYORK",303,65);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("LONDON",396,65);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("CRUISE",489,110);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("BEIJING",579,65);
+
+ c.fillStyle = "black";
+ c.font = "14px Verdana";
+ c.fillText("HONGKONG",662,65);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("WIND",768,85);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("ENERGY",758,110);
+
+ c.fillStyle = "black";
+ c.font = "17px Verdana";
+ c.fillText("ISRAEL",853,65);
+
+ //bawah kesamping
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("ATHENS",128,995);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("BARCA",225,995);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("CHANCE",307,955);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("TOKYO",404,995);
+
+ c.fillStyle = "black";
+ c.font = "17px Verdana";
+ c.fillText("RAILWAY",486,955);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("TAX",595,955);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("TAPEI",678,995);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("CHEST",765,955);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("GDYNIA",849,995);
+
+ //kanan kebawah
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("MADRID",8,160);
+
+ c.fillStyle = "black";
+ c.font = "16px Verdana";
+ c.fillText("SHANGHAI",8,250);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("CHEST",8,340);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("ROME",8,430);
+
+ c.fillStyle = "black";
+ c.font = "17px Verdana";
+ c.fillText("AIRPORT",8,520);
+
+ c.fillStyle = "black";
+ c.font = "17px Verdana";
+ c.fillText("TORONTO",8,610);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("KYIV",8,700);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("SOLAR",8,790);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("ENERGY",8,810)
+
+ c.fillStyle = "black";
+ c.font = "17px Verdana";
+ c.fillText("ISTANBUL",8,880);
+
+ //kanan kebawah
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("PARIS",985,160);
+
+ c.fillStyle = "black";
+ c.font = "16px Verdana";
+ c.fillText("BELGRADE",960,250);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("CHEST",975,340);
+
+ c.fillStyle = "black";
+ c.font = "15px Verdana";
+ c.fillText("CAPETOWN",960,430);
+
+ c.fillStyle = "black";
+ c.font = "17px Verdana";
+ c.fillText("SPACE",980,520);
+
+ c.fillStyle = "black";
+ c.font = "17px Verdana";
+ c.fillText("CHANCE",965,610);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("RIGA",990,700);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("SUPER",980,790);
+
+ c.fillStyle = "black";
+ c.font = "18px Verdana";
+ c.fillText("TAX",1005,810);
+
+ c.fillStyle = "black";
+ c.font = "16px Verdana";
+ c.fillText("MONTREAL",959,880)
+
+
+
+ };
+</script>
+<style>
+</style>
+
+
+
+ <canvas height="1050" id="paper" width="1050">
+ </canvas>
